@@ -1,4 +1,4 @@
-screenshots/architecture.png
+screenshots/production.png
 
 # Multi-Environment AWS Infrastructure using Terraform Workspaces
 
