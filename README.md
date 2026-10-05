@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="screenshots/production.png" width="1000">
+  <img src="screenshots/production.png" width="800">
 </p>
 
 # Multi-Environment AWS Infrastructure using Terraform Workspaces
