@@ -67,3 +67,35 @@ This project solves these problems by using **Terraform Workspaces** to manage m
         Separate State   Separate State   Separate State
               |                |                |
           AWS Stack        AWS Stack        AWS Stack
+
+
+                         INTERNET
+                             |
+                             v
+                    +----------------+
+                    | Internet       |
+                    | Gateway        |
+                    +-------+--------+
+                            |
+                            v
+                    +---------------+
+                    | Public Subnet |
+                    | 10.0.1.0/24   |
+                    |               |
+                    | NAT Gateway   |
+                    +-------+-------+
+                            |
+                            v
+                    +---------------+
+                    | Private Route |
+                    | Table         |
+                    +-------+-------+
+                            |
+                            v
+                    +---------------+
+                    | Private Subnet|
+                    | 10.0.2.0/24   |
+                    |               |
+                    | EC2 Instance  |
+                    | No Public IP  |
+                    +---------------+
