@@ -71,3 +71,11 @@ This project solves these problems by using **Terraform Workspaces** to manage m
         Separate State   Separate State   Separate State
               |                |                |
           AWS Stack        AWS Stack        AWS Stack
+
+---
+
+## Architecture
+---
+<p align="center">
+  <img src="screenshots/architecture.png" width="1000">
+</p>
