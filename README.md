@@ -149,7 +149,7 @@ terraform workspace select prod
 terraform plan
 terraform apply
 
-## 🎯 Design Principles
+##  Design Principles
 
 - **Infrastructure as Code** — AWS infrastructure is defined and managed using Terraform.
 - **Environment Isolation** — Dev, Staging, and Production use separate Terraform workspaces and state.
