@@ -1,4 +1,6 @@
-screenshots/architecture.png
+<p align="center">
+  <img src="screenshots/production.png" width="500">
+</p>
 
 # Multi-Environment AWS Infrastructure using Terraform Workspaces
 
