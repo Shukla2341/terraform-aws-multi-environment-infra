@@ -2,13 +2,13 @@
 
 Designed and implemented a production-style AWS infrastructure using Terraform with environment isolation, private networking, remote state management, and reusable Infrastructure as Code.
 
-## 🚀 Demo
+## Demo
 
 [Add your project demo link here]
 
 ---
 
-## 📌 Project Summary
+##  Project Summary
 
 This project provisions AWS infrastructure for **Development, Staging, and Production** environments using a single Terraform codebase and **Terraform Workspaces**.
 
@@ -30,7 +30,7 @@ Each workspace maintains a separate Terraform state and provides environment-spe
 
 ---
 
-## 🛠️ Key Skills Demonstrated
+##  Key Skills Demonstrated
 
 - Terraform Infrastructure as Code
 - AWS VPC
@@ -51,7 +51,7 @@ Each workspace maintains a separate Terraform state and provides environment-spe
 
 ---
 
-## 🎯 Problem This Solves
+## Problem This Solves
 
 Managing multiple environments manually can result in duplicated configurations, inconsistent infrastructure, state conflicts, and deployment errors.
 
@@ -67,44 +67,3 @@ This project solves these problems by using **Terraform Workspaces** to manage m
         Separate State   Separate State   Separate State
               |                |                |
           AWS Stack        AWS Stack        AWS Stack
-
-
-                         INTERNET
-                             |
-                             v
-                    +----------------+
-                    | Internet       |
-                    | Gateway        |
-                    +-------+--------+
-                            |
-                            v
-                    +---------------+
-                    | Public Subnet |
-                    | 10.0.1.0/24   |
-                    |               |
-                    | NAT Gateway   |
-                    +-------+-------+
-                            |
-                            v
-                    +---------------+
-                    | Private Route |
-                    | Table         |
-                    +-------+-------+
-                            |
-                            v
-                    +---------------+
-                    | Private Subnet|
-                    | 10.0.2.0/24   |
-                    |               |
-                    | EC2 Instance  |
-                    | No Public IP  |
-                    +---------------+
-
-
-Environment Differences
-Environment	Terraform Workspace	EC2 Instance
-Development	dev	t3.micro
-Staging	staging	t3.micro
-Production	prod	t3.small
-
-The active workspace controls the environment-specific configuration.
