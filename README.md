@@ -1,3 +1,5 @@
+screenshots/architecture.png
+
 # Multi-Environment AWS Infrastructure using Terraform Workspaces
 
 Designed and implemented a production-style AWS infrastructure using Terraform with environment isolation, private networking, remote state management, and reusable Infrastructure as Code.
