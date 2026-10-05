@@ -99,3 +99,12 @@ This project solves these problems by using **Terraform Workspaces** to manage m
                     | EC2 Instance  |
                     | No Public IP  |
                     +---------------+
+
+
+Environment Differences
+Environment	Terraform Workspace	EC2 Instance
+Development	dev	t3.micro
+Staging	staging	t3.micro
+Production	prod	t3.small
+
+The active workspace controls the environment-specific configuration.
